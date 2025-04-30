@@ -1,0 +1,49 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Exercice2</title>
+  <style>
+    form{
+  display:flex;
+  justify-content: center;
+  margin:30px;
+  border-radius:12px;
+  padding:15px;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: lightblue;
+}
+input[type="submit"]{
+  background-color:#007bff;
+  padding: 6px;
+  color:white;
+  border: 1px solid #007bff;
+}
+input[type="text"]{
+  padding:6px;
+}
+.style{
+   display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: lightblue;
+  border-radius:12px;
+}
+.completed{
+  text-decoration: line-through;
+      color: gray;
+}
+  </style>
+</head>
+<body>
+  <form onsubmit="todo(); return false;">
+    <label>Entrez une tâche :</label>
+    <input type="text" name="tache" id="text">
+    <input type="submit" value="Ajouter">
+  </form>
+  <ul id="list"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
